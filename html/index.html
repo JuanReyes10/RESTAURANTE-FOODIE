@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODIE | Una experiencia por probar</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@595&family=Parkinsans:wght@300..800&display=swap"> <!-- Incluir Font Awesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <div class="container">
+        <header class="encabezado-principal">
+            <div class="envoltura-logo">
+                <a class="logo-header" href="#">FOODIE</a>
+            </div>
+            <nav class="menu-navegacion">
+                <ul class="menu-principal">
+                    <li class="lista-menu"><a href="../html/index.html" class="active">INICIO</a></li>
+                    <li class="lista-menu"><a href="../html/quiero.html">QUIERO</a>
+                        <ul class="menu-desplegable">
+                            <li><a href="../html/reservas.html">Una Reserva</a></li> <!-- Corrige el nombre del archivo -->
+                            <li><a href="../html/pedidos.html">Un Pedido</a></li>
+                        </ul>
+                    </li>
+                    <li class="lista-menu"><a href="../html/sedes.html">SEDES</a></li>
+                    <li class="lista-menu"><a href="../html/ofertas.html">OFERTAS...</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="botones-header">
+                <a href="./iniciar_sesion.html" class="enlace-boton">
+                    <button class="boton">Iniciar Sesión</button>
+                </a>
+                <a href="./registrarse.html" class="enlace-boton">
+                    <button class="boton">Registrarse</button>
+                </a>
+            </div>
+            
+        </header>
+    </div>
+
+    <!-- Sección principal -->
+    <main class="main-content">
+        <section class="explicacion-foodie">
+            <h1>¿Te antojas de un FOODIE?</h1>
+            <p>Si no hay un FOODIE, no somos nosotros</p>
+
+            <!-- Tarjeta desplegable -->
+            <article class="tarjeta-inspiracion">
+                <h2>¡Bienvenidos a FOODIE!</h2>
+                <div class="contenido-tarjeta">
+                    <p>En nuestro restaurante, nos enorgullece ofrecer una experiencia culinaria única que combina lo 
+                    mejor de los postres con una variedad de opciones deliciosas. Nuestro FOODIE, un postre estrella,
+                    es solo una parte de lo que hace especial a nuestro menú. Aquí, cada visita es una oportunidad 
+                    para deleitarse con sabores cuidadosamente equilibrados y texturas sorprendentes.</p>
+                    <p>Además de nuestro FOODIE, encontrarás una variedad de sándwiches, ensaladas frescas, bebidas de
+                    café, pasabocas y cócteles seleccionados para complementar tu experiencia. Ya sea que vengas a 
+                    disfrutar de un postre inolvidable, a compartir un almuerzo ligero con amigos, o a relajarte con 
+                    un cóctel refrescante, en FOODIE te ofrecemos un ambiente acogedor y una atmósfera vibrante que 
+                    te hará sentir como en casa.</p>
+                    <h4>¡DESCUBRE LA MAGIA EN CADA BOCADO Y DEJATE SORPREBDER POR NUESTRAS CREACIONES CULINARIAS!</h4>
+                    <button class="reserva-experiencia" onclick="location.href='../html/reservas.html'">Reserva tu experiencia</button>
+                </div>
+            </article>
+            <article class="contenedor-imagenes">
+                <img src="../img/foodie.jpeg" alt="Imagen del FOODIE" class="imagen-foodie">
+                <img src="../img/restaurant.jpeg" alt="Imagen de relleno" id="imagen-foodie-2">
+            </article>
+            <article class="texto-imagenes">
+                <h1>"Descubre la magia en cada bocado"</h1>
+                <p>Una delicia para cada sentido</p>
+            </article>
+            
+        </section>
+        <!-- CARDS SERVICES-->
+        <section id="sliders">
+            <h1>PRUEBA NUESTRO MENU</h1>
+            <div class="container-tarjetas">
+                
+                <article class="card">
+                    <figure>
+                        <img src="../img/ensaladas.jpeg" >
+                    </figure>
+                    <div class="contenido">
+                        <h3>Ensaladas</h3>
+                        <p>Ensaladas Frescas y vibrantes, nuestras ensaladas combinan ingredientes de alta calidad con aderezos exquisitos. Perfectas para aquellos que buscan una opción ligera pero llena de sabor.</p>
+                        <a href="./quiero.html">RESERVAR AHORA </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img src="../img/pasabocas.jpeg" >
+                    </figure>
+                    <div class="contenido">
+                        <h3>Pasabocas</h3>
+                        <p>Deliciosos y crujientes, nuestros pasabocas son el acompañamiento ideal para cualquier bebida. Desde nachos hasta alitas de pollo, cada bocado es una explosión de sabor.</p>
+                        <a href="./quiero.html">RESERVAR AHORA</a>
+                    </div>
+                </article>
+                <div class="card">
+                    <figure>
+                        <img src="../img/bebidas_cocteles.jpg" >
+                    </figure>
+                    <div class="contenido">
+                        <h3>Bebidas / Cocteles</h3>
+                        <p>Refrescantes y únicos, nuestros cocteles están diseñados para deleitar tus sentidos. Disfruta de clásicos como el Mojito y la Margarita, o prueba nuestra exclusiva selección de bebidas.</p>
+                        <a href="./quiero.html">RESERVAR AHORA </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="../img/postres.jpg" >
+                    </figure>
+                    <div class="contenido">
+                        <h3>Postres</h3>
+                        <p>Finaliza tu experiencia con nuestros irresistibles postres. Desde el clásico Tiramisú hasta el cremoso Cheesecake, cada postre es una dulce tentación que no querrás perderte.</p>
+                        <a href="./quiero.html">RESERVAR AHORA</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <article class="publicidad">
+                <p>¡Inscríbete y recibe un 10% de descuento en tu primera reserva o domicilio!</p>
+                <i class="fa-solid fa-pen"></i>
+                <a href="../html/iniciar_sesion.html" class="boton">SUSCRIBIRME</a>
+            </article>
+            <section class="slogan-publicitario">
+                <div class="slogan">
+                    "Cada bocado es una dulzura celestial"
+                </div>
+            </section>
+            <section class="form-sencillo">
+                <div class="account-section">
+                    <h2>¿Ya tienes cuenta?</h2>
+                    <p>Si ya tienes una cuenta</p>
+                    <button class="button-link"><a href="./iniciar_sesion.html">Inicia sesión</a></button>
+                    <p>Si no tienes cuenta</p>
+                    <button class="button-link"><a href="./registrarse.html">Regístrate</a></button>
+                </div>
+            </section>
+            
+        
+        </section>
+        <!--titulos--->
+        <div class="encabezado-testimonio">
+            <span>Comentarios</span>
+            <h1>Los clientes dicen..</h1>
+        </div>
+        <!--testimonios------------------->
+        <section id="testimonios">
+            <!--ttestimoniodel contenedor------>
+            <div class="container-testimonios">
+                <!--BOX-1-------------->
+                <div class="caja-testimonios">
+                    <!--top------------------------->
+                    <div class="tapa-caja">
+                        <!--perfil----->
+                        <div class="perfil">
+                            <!--img---->
+                            <div class="perfil-img">
+                                <img src="../img/c-1.jpg" />
+                            </div>
+                            <!--nombre de usuario-->
+                            <div class="nombre-usuario">
+                                <strong>Johan Perdomo</strong>
+                                <span>@JohanPerdomo</span>
+                            </div>
+                        </div>
+                        <!--calificacion------>
+                        <div class="opiniones">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><!--Empty star-->
+                            
+                        </div>
+                    </div>
+                    <!--Comentario---------------------------------------->
+                    <div class="comentaario-cliente">
+                        <p>" La comida fue excelente y el ambiente muy acogedor. Solo le faltó un poquito de rapidez en el servicio, pero en general la experiencia fue muy agradable. Definitivamente regresaré y recomendaré este lugar a mis amigos. " </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- testimonio 2-->
+            <div class="container-testimonios">
+                <!--BOX-2-------------->
+                <div class="caja-testimonios">
+                    <!--top------------------------->
+                    <div class="tapa-caja">
+                        <!--perfil----->
+                        <div class="perfil">
+                            <!--img---->
+                            <div class="perfil-img">
+                                <img src="../img/c-2.jpg" />
+                            </div>
+                            <!--nombre de usuario-->
+                            <div class="nombre-usuario">
+                                <strong>Alejandro Olaya</strong>
+                                <span>@Gusanito</span>
+                            </div>
+                        </div>
+                        <!--calificacion------>
+                        <div class="opiniones">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <!--Comentario---------------------------------------->
+                    <div class="comentaario-cliente">
+                        <p>" El lugar está bien, pero la comida no fue tan buena como esperaba. Podrían mejorar la atención y la presentación de los platos. Creo que hay potencial, pero necesitan enfocarse más en los detalles. " </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- testimonio 3-->
+            <div class="container-testimonios">
+                <!--BOX-3-------------->
+                <div class="caja-testimonios">
+                    <!--top------------------------->
+                    <div class="tapa-caja">
+                        <!--perfil----->
+                        <div class="perfil">
+                            <!--img---->
+                            <div class="perfil-img">
+                                <img src="../img/c-3.jpg" />
+                            </div>
+                            <!--nombre de usuario-->
+                            <div class="nombre-usuario">
+                                <strong>Osvaldo Perez</strong>
+                                <span>@OsvaldoPerez</span>
+                            </div>
+                        </div>
+                        <!--calificacion------>
+                        <div class="opiniones">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <!--Comentario---------------------------------------->
+                    <div class="comentaario-cliente">
+                        <p>" ¡Increíble! Desde la entrada hasta el postre, todo estuvo perfecto. Muy recomendado. El personal fue muy amable y atento. La atmósfera del lugar hizo que la experiencia fuera aún más especial. " </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- testimonio 4-->
+            <div class="container-testimonios">
+                <!--BOX-4-------------->
+                <div class="caja-testimonios">
+                    <!--top------------------------->
+                    <div class="tapa-caja">
+                        <!--perfil----->
+                        <div class="perfil">
+                            <!--img---->
+                            <div class="perfil-img">
+                                <img src="../img/c-4.jpg" />
+                            </div>
+                            <!--nombre de usuario-->
+                            <div class="nombre-usuario">
+                                <strong>Valerin Dayana</strong>
+                                <span>@ValerinDayana</span>
+                            </div>
+                        </div>
+                        <!--calificacion------>
+                        <div class="opiniones">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <!--Comentario---------------------------------------->
+                    <div class="comentaario-cliente">
+                        <p>" Me encantó la experiencia, la comida y el servicio fueron excepcionales. Volveré sin duda. Los sabores eran auténticos y frescos, y la presentación de los platos fue impresionante. Un lugar para recordar. " </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <section id="footer">   
+            <div class="footer-content">
+                <div class="footer-section">
+                    
+                    <ul>
+                        <li><a href="ruta-a-politicas-privacidad.html">Políticas de Privacidad</a></li>
+                        <li><a href="ruta-a-terminos-condiciones.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos en nuestras redes sociales</h3>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook fa-beat"></i>
+                            
+                        </a>
+                        <a href="https://web.whatsapp.com/" target="_blank">
+                            <i class="fa-brands fa-whatsapp fa-beat"></i>
+                        </a>
+
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram fa-beat"></i>
+                    </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; 2024 FOODIE. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
+
